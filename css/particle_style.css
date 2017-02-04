@@ -14,6 +14,7 @@ canvas{
   height: 100%;/*
   background-color: #b61924; red*/
   background-color: #f5cc2b;
+ /* background-color: #ffc20d;*/
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;

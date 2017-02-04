@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]> <html class="no-js ie ie8 ie7"> <![endif]-->
+<!--[if lte IE 8]> <html class="no-js ie ie8"> <![endif]-->
+<!--[if lte IE 9]> <html class="no-js ie"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<!--<![endif]-->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+  <meta charset="utf-8">
+  <meta name="Language" content="en" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Codart'17 | ACM VIT</title>
+  <meta name="description" content="Codart is a 36 hours online event followed by second round which is a fun event. Brace yourselves." />
+  <meta name="keywords" content="Codart,event,acm,vit,harshit kedia">
+  <meta name="author" content="ACM VIT">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Codart'17 | ACM VIT" />
+  <meta property="og:url" content="www.codart.acmvit.com" />
+  <meta property="og:title" content="Codart'17 | ACM VIT" />
+  <meta property="og:description" content="Codart is a 36 hours online event followed by second round which is a fun event. Brace yourselves." />
+  <meta property="og:image" content="images/codart.png" />
+  <meta itemprop="name" content="Codart'17 | ACM VIT" />
+  <meta itemprop="description" content="Codart is a 36 hours online event followed by second round which is a fun event. Brace yourselves." />
+  <meta itemprop="image" content="images/codart.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@acmvit" />
+  <meta name="twitter:title" content="Codart'17 | ACM VIT" />
+  <meta name="twitter:description" content="Codart is a 36 hours online event followed by second round which is a fun event. Brace yourselves." />
+  <meta name="twitter:image" content="images/codart.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/codart.png" />
+  <link rel="icon" type="image/png" href="images/codart.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="images/codart.png" sizes="128x128" />
+  <link rel="icon" href="images/codart.png" />
+  
+  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+  <link href="css/materialicons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Signika+Negative" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <style type="text/css">
+
+  </style>
+   <!--  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+     (function(){
+      emailjs.init("user_N4tbQO3DhT5HZfYujve5X");
+  })();
+</script> -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" type="text/javascript"></script>
+<script>
+  new WOW().init();
+</script>
+<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+  <div class="container">
+    <br>
+    <div class="div-codart center wow fadeIn">
+     <a href="index.html"> <img src="images/codart.png" class="img-codart center responsive-img"></a>
+   </div>
+   <h3 class="center">Register your team</h3>
+   <div class="row">
+    <div class="input-field col s12 center">
+     <input class="with-gap member-choose" name="team" type="radio" id="oneteam" value="one" checked="checked"  />
+     <label for="oneteam">One member</label>
+     &nbsp;&nbsp;
+     <input class="with-gap member-choose" name="team" type="radio" id="twoteam" value="two" />
+     <label for="twoteam">Two members</label>
+   </div>
+   <br><br><br>
+   <div class="single-wrap col m12">
+    <ul class="team-ul col s12">
+      <li>Your details</li>
+    </ul>
+    <div class="input-field col s12 m6">
+     <input id="name" type="text" class="validate" required maxlength="5" name="name">
+     <label for="name">Name <span class="required">*</span></label>
+   </div>
+   <div class="input-field col s12 m6">
+    <input id="regno" type="text" class="validate" required name="regno">
+    <label for="regno">Reg no <span class="required">*</span></label>
+  </div>
+  <div class="input-field col s12 m6">
+    <input id="phone" type="number" class="validate" required maxlength="10" name="phone">
+    <label for="phone">Phone no <span class="required">*</span></label>
+  </div>
+  <div class="input-field col s12 m6">
+    <input id="email" type="email" class="validate" required name="email">
+    <label for="email">Email <span class="required">*</span></label>
+  </div>
+</div>
+<div class="double-wrap col m6">
+  <ul class="team-ul col s12">
+    <li>Your team member's details</li>
+  </ul>
+  <div class="input-field col s12 m12">
+   <input id="name" type="text" class="validate" required maxlength="5" name="name">
+   <label for="name">Name <span class="required">*</span></label>
+ </div>
+ <div class="input-field col s12 m12">
+  <input id="regno" type="text" class="validate" name="regno">
+  <label for="regno">Reg no</label>
+</div>
+<div class="input-field col s12 m12">
+  <input id="phone" type="number" class="validate" maxlength="10" name="phone">
+  <label for="phone">Phone no</label>
+</div>
+<div class="input-field col s12 m12">
+  <input id="email" type="email" class="validate" name="email">
+  <label for="email">Email</label>
+</div>
+</div>
+<div class="input-field col s12 m12">
+  <input id="hackerrank" type="text" class="validate" required name="hackerrank">
+  <label for="hackerrank">HackerRank userid (One HackerRank account for one team) <span class="required">*</span></label>
+</div>
+<div class="center-align">
+  <button class="waves-effect btn btn-submit" id="submit">Submit <i class="material-icons right">send</i></button>
+</div>
+<br><br>
+</div>
+</div>
+<script type="text/javascript">
+  //register form
+  $(document).ready(function() {
+    var choose=$(".member-choose");
+    var wrap2=$(".double-wrap");
+    var wrap1=$(".single-wrap");
+    $(choose).change(function() {
+      if (this.value == 'one') {
+       disp_one();
+
+     }
+     else if (this.value == 'two') {
+       disp_two();
+     }
+   });
+    function disp_one(){
+      $(wrap1).removeClass("m6");
+      $(wrap1).addClass("m12");
+      $(".single-wrap .input-field").removeClass("m12");
+      $(".single-wrap .input-field").addClass("m6");
+      $(wrap2).hide();
+    }
+    function disp_two(){
+      $(wrap1).removeClass("m12");
+      $(wrap1).addClass("m6");
+      $(".single-wrap .input-field").removeClass("m6");
+      $(".single-wrap .input-field").addClass("m12");
+      $(wrap2).show();
+    }
+    disp_one();
+  });
+</script>
+
+</body>
+</html>

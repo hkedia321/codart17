@@ -30,45 +30,9 @@
 
   });
 
-  //register form
-  $(document).ready(function() {
-    var choose=$(".member-choose");
-    var wrap2=$(".double-wrap");
-    var wrap1=$(".single-wrap");
-    $(choose).change(function() {
-      if (this.value == 'one') {
-       disp_one();
+  
 
-     }
-     else if (this.value == 'two') {
-       disp_two();
-     }
-   });
-    function disp_one(){
-      $(wrap1).removeClass("m6");
-      $(wrap1).addClass("m12");
-      $(".single-wrap .input-field").removeClass("m12");
-      $(".single-wrap .input-field").addClass("m6");
-      $(wrap2).hide();
-    }
-    function disp_two(){
-      $(wrap1).removeClass("m12");
-      $(wrap1).addClass("m6");
-      $(".single-wrap .input-field").removeClass("m6");
-      $(".single-wrap .input-field").addClass("m12");
-      $(wrap2).show();
-    }
-    disp_one();
-  });
-
-  //preloader
-  $(document).ready(function() {
-
-    setTimeout(function(){
-      $('body').addClass('loaded');
-    });
-
-  });
+  
 //round tabs
 $(document).ready(function(){
   $('ul.tabs').tabs();

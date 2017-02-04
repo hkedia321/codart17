@@ -368,52 +368,20 @@ footer .email_link{
 	color: #000;
 }
 /*modal register*/
-@media(min-width: 769px){
-	.modal{
-		width: 70%;
-		max-height: 80%;
-	}
-}
-.modal{
-	background-color: #b61924;
-	background-color: #f2f2f2;
-}
-.modal-close-div{
-position: absolute;
-top: 5px;
-right: 5px;
-font-size: 1.2rem;
-}
-.modal *{
-	color: #4d4d4d !important;
-}
-.modal .team-ul{
+
+.team-ul{
 	list-style: initial;
 	margin: 0px;
 }
-.modal .team-ul li{
+.team-ul li{
 	list-style: initial;
 	font-size: 1.2rem;
 }
-.modal .modal-footer{
-	background-color: #ffc107;
-}
-.modal fieldset{
-	border: 1px solid rgba(192, 192, 192, 0.52);
-}
-.modal legend{
-	color: #eee;
-}
-.modal [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
-	background-color: #5a5a5a;
-}
-.modal [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
-    border: 2px solid #5a5a5a;
-}
-.modal .input-field{
+
+.input-field{
 	transition: all 0.5s ease;
 }
-.modal .double-wrap{
+.double-wrap{
 	transition: all 0.5s ease;
 }
 .modal .hackerrank-link{
