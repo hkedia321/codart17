@@ -65,98 +65,39 @@
    </div>
    <h3 class="center">Register your team</h3>
    <div class="row">
-    <div class="input-field col s12 center">
-     <input class="with-gap member-choose" name="team" type="radio" id="oneteam" value="one" checked="checked"  />
-     <label for="oneteam">One member</label>
-     &nbsp;&nbsp;
-     <input class="with-gap member-choose" name="team" type="radio" id="twoteam" value="two" />
-     <label for="twoteam">Two members</label>
-   </div>
-   <br><br><br>
-   <div class="single-wrap col m12">
-    <ul class="team-ul col s12">
-      <li>Your details</li>
-    </ul>
+     <br><br><br>
+     <form action="register_php.php" method="POST">
+     <div class="single-wrap col m12">
+      <ul class="team-ul col s12">
+        <li>Your details</li>
+      </ul>
+      <div class="input-field col s12 m6">
+       <input id="name" type="text" class="validate" required maxlength="5" name="name">
+       <label for="name">Name <span class="required">*</span></label>
+     </div>
+     <div class="input-field col s12 m6">
+      <input id="regno" type="text" class="validate" required name="regno">
+      <label for="regno">Reg no <span class="required">*</span></label>
+    </div>
     <div class="input-field col s12 m6">
-     <input id="name" type="text" class="validate" required maxlength="5" name="name">
-     <label for="name">Name <span class="required">*</span></label>
-   </div>
-   <div class="input-field col s12 m6">
-    <input id="regno" type="text" class="validate" required name="regno">
-    <label for="regno">Reg no <span class="required">*</span></label>
+      <input id="phone" type="number" class="validate" required maxlength="10" name="phone">
+      <label for="phone">Phone no <span class="required">*</span></label>
+    </div>
+    <div class="input-field col s12 m6">
+      <input id="email" type="email" class="validate" required name="email">
+      <label for="email">Email <span class="required">*</span></label>
+    </div>
   </div>
-  <div class="input-field col s12 m6">
-    <input id="phone" type="number" class="validate" required maxlength="10" name="phone">
-    <label for="phone">Phone no <span class="required">*</span></label>
-  </div>
-  <div class="input-field col s12 m6">
-    <input id="email" type="email" class="validate" required name="email">
-    <label for="email">Email <span class="required">*</span></label>
-  </div>
-</div>
-<div class="double-wrap col m6">
-  <ul class="team-ul col s12">
-    <li>Your team member's details</li>
-  </ul>
   <div class="input-field col s12 m12">
-   <input id="name" type="text" class="validate" required maxlength="5" name="name">
-   <label for="name">Name <span class="required">*</span></label>
- </div>
- <div class="input-field col s12 m12">
-  <input id="regno" type="text" class="validate" name="regno">
-  <label for="regno">Reg no</label>
-</div>
-<div class="input-field col s12 m12">
-  <input id="phone" type="number" class="validate" maxlength="10" name="phone">
-  <label for="phone">Phone no</label>
-</div>
-<div class="input-field col s12 m12">
-  <input id="email" type="email" class="validate" name="email">
-  <label for="email">Email</label>
+    <input id="hackerrank" type="text" class="validate" required name="hackerrank">
+    <label for="hackerrank">HackerRank userid (One HackerRank account for one team) <span class="required">*</span></label>
+  </div>
+  <div class="center-align">
+    <input class="waves-effect btn btn-submit" type="submit" name="submit" id="submit" value="submit" />
+  </div>
+  </form>
+  <br><br>
 </div>
 </div>
-<div class="input-field col s12 m12">
-  <input id="hackerrank" type="text" class="validate" required name="hackerrank">
-  <label for="hackerrank">HackerRank userid (One HackerRank account for one team) <span class="required">*</span></label>
-</div>
-<div class="center-align">
-  <button class="waves-effect btn btn-submit" id="submit">Submit <i class="material-icons right">send</i></button>
-</div>
-<br><br>
-</div>
-</div>
-<script type="text/javascript">
-  //register form
-  $(document).ready(function() {
-    var choose=$(".member-choose");
-    var wrap2=$(".double-wrap");
-    var wrap1=$(".single-wrap");
-    $(choose).change(function() {
-      if (this.value == 'one') {
-       disp_one();
-
-     }
-     else if (this.value == 'two') {
-       disp_two();
-     }
-   });
-    function disp_one(){
-      $(wrap1).removeClass("m6");
-      $(wrap1).addClass("m12");
-      $(".single-wrap .input-field").removeClass("m12");
-      $(".single-wrap .input-field").addClass("m6");
-      $(wrap2).hide();
-    }
-    function disp_two(){
-      $(wrap1).removeClass("m12");
-      $(wrap1).addClass("m6");
-      $(".single-wrap .input-field").removeClass("m6");
-      $(".single-wrap .input-field").addClass("m12");
-      $(wrap2).show();
-    }
-    disp_one();
-  });
-</script>
-
 </body>
 </html>
